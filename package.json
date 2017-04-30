@@ -1,0 +1,35 @@
+{
+  "name": "Wherego-react-tutorial",
+  "version": "0.0.1",
+  "description": "A react tutorial by Wherego.",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --host 0.0.0.0 --port 3000 --hot --progress --colors"
+  },
+  "author": "Bo Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.13.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.19.0",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.4.2",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
