@@ -8,6 +8,7 @@ module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:3000',
 		'webpack/hot/only-dev-server',
+		'./app/app.js',
 	],
 	output: {
 		path: './build',
@@ -25,7 +26,6 @@ module.exports = {
 				exclude: /node_modules/,
 				loaders: [
 					'babel-loader?' +  JSON.stringify({presets: ['es2015', 'react']}),
-					'eslint-loader'
 				]
 			},
 			{
@@ -43,9 +43,6 @@ module.exports = {
 				loader: "file"
 			}
 		]
-	},
-	eslint: {
-		configFile: './.eslintrc'
 	},
 	devServer: {
 		contentBase: "./build",
