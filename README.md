@@ -44,7 +44,7 @@ Go to 127.0.0.1:3000 in a browser window to access this page.
 
 Right now it doesn't show anything.
 
-**action** Remove the comment tag around the <h1> element so the content gets displayed.
+**action** Remove the comment tag around the `<h1>` element so the content gets displayed.
 
 Now if you refresh your browser window you should see the line "Step 1 completed!" appear!
 
