@@ -9,7 +9,9 @@
   "author": "Bo Zhang",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
