@@ -1,39 +1,41 @@
 # Welcome To The Wherego's React Tutorial
 
-# You are at Step 2 
+# You are at Step 3 
 
-In this step you will introduce React into this project.
+In this step you will introduce React Component into this project.
 
-### Installation
-First, we want to install React for our development environment.
+### What is React Component?
+* React Components, as far as Wherego's applications go, contain ES6, JSX, and occasionally CSS in JSX syntax.
 
-**action** Do so by adding React and React Dom packages to our project by running the following command:
-```
-npm install --save react react-dom
-```
+* A React Component is a modulized unit that renders a HTML elements.
 
-The "--save" flag saves packages to the project's dependency list. After running the above command, check your package.json file and you should find these items in your "dependencies" field:
+* A React Component can render other React Components ("child components"), and often do.
 
-```
-"react": "^15.0.0",
-"react-dom": "^15.0.0"
-```
+* A React Component can receive data and pass data down to "child" components, via `props` mechanism. 
 
-### Use React
-There is a new directory "app" in your project. Find "app.js" file in it.
+* A React Component can contain internal data called `state`.
 
-**action** Uncomment the two lines on top of the app.js file.
+To learn more about React Component, read [here]().
 
-"import" is the way to bring external code into a javascript file in ES6 syntax. We will see more of it later. In this case, we brought the code from React into an object called `React` and the `render` function from React Dom library.
+You will also want to read up on [JSX]().
 
-Notice that there is a bit of html code in the `render` call in app.js. The code simply tries to insert a new `div` element into an existing element with the id `apps`.
+### Introducing React Component
+At Wherego, we usually put ONE component in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
 
-**action** So now start up the Webpack Dev Server: `npm start`
+**action** In `app/app.js`, uncomment the line `import AppBody from './AppBody'`
 
-Now if you visit 127.0.0.1:3000, you should see the phrase "Step 2 completed!".
+Now if you visit 127.0.0.1:3000, you should see the phrase "Step 3" in your browser window.
 
-Wait what? You don't?
+### A bit further with Component
+`app/AppBody.jsx` is the component in its minimum form. It is an object that 'extends', which is a form of inheritance, the Component class and implements the 'render' method. In the render method, it returns some HTML code written in JSX syntax.
 
-Well, to tell the truth, there is a subtle bug hidden in the code.
+The single most useful feature of the React Component system is that a component can render any number of other components.
 
-Proceed to the next step after you manage to find it and get the text to appear in your browser.
+You are going to try that feature out.
+
+**action** Remove the text `Step 3` from `app/AppBody.jsx`. Use `app/Step.jsx` and `app/Completed.jsx` inside the `app-body` element in `app/AppBody.jsx` to display the sentence "Step 3 completed!".
+
+Hint: The syntax is very similar to how we used AppBody in `app.js`.
+
+After you are done, proceed to the next step.
+ 

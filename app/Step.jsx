@@ -4,7 +4,7 @@ export default class Step extends Component {
 	render() {
 		return (
 			<span className="step">
-				Step 3 completed!
+				Step 3&nbsp;
 			</span>
 		)
 	}
