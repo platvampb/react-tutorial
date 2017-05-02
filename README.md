@@ -26,7 +26,7 @@ For what Webpack is and does, see [here](https://webpack.js.org/).
 
 You are not required to understand how webpack works. The only thing you need to know is that we use webpack-dev-server, a webpack plugin, to serve your webpages in development environment.
 
-In package.json, find the code below '''
+In package.json, find the code below ```
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0 --port 3000 --hot --progress --colors"
   },
