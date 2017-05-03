@@ -15,9 +15,9 @@ In this step you will introduce React Component into this project.
 
 * A React Component can contain internal data called `state`.
 
-To learn more about React Component, read [here]().
+To learn more about React Component, read [here](https://facebook.github.io/react/docs/react-component.html).
 
-You will also want to read up on [JSX]().
+You will also want to read up on [JSX](https://shripadk.github.io/react/docs/displaying-data.html).
 
 ### Introducing React Component
 At Wherego, we usually put ONE component in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
