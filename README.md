@@ -1,41 +1,50 @@
 # Welcome To The Wherego's React Tutorial
 
-# You are at Step 3 
+# You are at Step 4 
 
-In this step you will introduce React Component into this project.
+In this step you will learn about basic data flow.
 
-### What is React Component?
-* React Components, as far as Wherego's applications go, contain ES6, JSX, and occasionally CSS in JSX syntax.
+Start up your Webpack Dev Server and goto `127.0.0.1:3000`. You should see "Step 4" in your browser window.
 
-* A React Component is a modulized unit that renders a HTML elements.
+### Props
+Data is passed from a parent component to child components via props.
 
-* A React Component can render other React Components ("child components"), and often do.
+Look at how data is passed from the component `AppBody` to `Step`.
 
-* A React Component can receive data and pass data down to "child" components, via `props` mechanism. 
+A prop `stepNumber` passed with a value '4'.
 
-* A React Component can contain internal data called `state`.
+And in `Step` component, the data is accessed by using `this.props.stepNumber`.
 
-To learn more about React Component, read [here](https://facebook.github.io/react/docs/react-component.html).
+Try changing the value of `stepNumber` in `AppBody`. The change should be reflected on the page.
 
-You will also want to read up on [JSX](https://shripadk.github.io/react/docs/displaying-data.html).
+### State
+In programming, 'state' refers to the information that a program stores to describe its, well, current state. For our purposes, we usually use 'state' to describe call the essential data that affect the display of UI elements.
 
-### Introducing React Component
-At Wherego, we usually put ONE component in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
+A component can keep its own state by declaring a state object. 
 
-**action** In `app/app.js`, uncomment the line `import AppBody from './AppBody'`
+In `AppBody`'s constructor, a state object is declared with a variable called `completed`. You should always initialize state object in the constructor.
 
-Now if you visit 127.0.0.1:3000, you should see the phrase "Step 3" in your browser window.
+### Event handling
+On a Web page, user interactions with the UI trigger different events. Implement handlers for these events enable corresponding actions.
 
-### A bit further with Component
-`app/AppBody.jsx` is the component in its minimum form. It is an object that 'extends', which is a form of inheritance, the Component class and implements the 'render' method. In the render method, it returns some HTML code written in JSX syntax.
+Take a look at the `CompleteLink` component. It has declared a `onClick` event on the `div` element and have assigned the `completeStep` method to handle the event. Read the `completeSte` method definition, and the code in `Completed` component. Now take a guess what the method does.
 
-The single most useful feature of the React Component system is that a component can render any number of other components.
+**action** Now uncomment the `<CompletLink/>` line in `AppBody`. You should be able to see a new line "Click to complete!" in your browser. What happens when you click on it?
 
-You are going to try that feature out.
+Nothing?
 
-**action** Remove the text `Step 3` from `app/AppBody.jsx`. Use `app/Step.jsx` and `app/Completed.jsx` inside the `app-body` element in `app/AppBody.jsx` to display the sentence "Step 3 completed!".
+**action** Open the debug console of your browser and click on the line again. You should be able to see the line "I am clicked!" in the console output.
 
-Hint: The syntax is very similar to how we used AppBody in `app.js`.
+You should also see an error message that says: "Cannot assign to read only property 'completed' of object '#<Object>'"
 
-After you are done, proceed to the next step.
- 
+That means the data passed in through props are read only and cannot be modified.
+
+This is a central concept of React's component system. Conceptually, data can only be sent down from parent components to child, not up. This design is referred to as "one way data-binding" or "unidirectional data flow". You can read about it more [here](https://www.exclamationlabs.com/blog/the-case-for-unidirectional-data-flow/).
+
+In order to change data that are "above" a component, the component where the data was initiated as a state variable must implement a method that can change the data and pass it down.
+
+Find the `completeStep` method in `AppBody`. This method uses `setState` method to update the state variable. You should only use `setState` to change state variables.
+
+**action** pass the `completeStep` method as a prop to the `CompletLink` component. Attach it to the `onClick` event.
+
+When you are able to see the "Step 4 completed!" message, go to next step.

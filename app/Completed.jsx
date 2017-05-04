@@ -2,11 +2,16 @@ import React, { Component } from 'react'
 
 export default class Completed extends Component {
 	render() {
-		return (
+		let completed = this.props.completed
+		let completeContent = (
 			<span className="completed">
-			completed!
+				completed!
 			</span>
 		)
+		if (completed)
+			return completeContent
+
+		return null
 	}
 }
 
