@@ -17,7 +17,7 @@ A good quick desciption of what a package manager is can be found [here](https:/
 
 To understand how this file works for NPM, read the official [manual](https://docs.npmjs.com/getting-started/using-a-package.json).
 
-**action** Having this file allows quickly setup of a development environment by simply entering this command into a terminal window:`npm install`. This will install all the dependencies you need for this step.
+**Action** Having this file allows quickly setup of a development environment by simply entering this command into a terminal window:`npm install`. This will install all the dependencies you need for this step.
 
 ### webpack.conig.json
 This file is a configuration file used by Webpack.
@@ -35,7 +35,7 @@ In package.json, find the code below
 
 These lines of code set the npm command "start" to start a webpack dev server. So the command `npm start` is now a shorthand command of `webpack-dev-server --host 0.0.0.0 --port 3000 --hot --progress --colors`
 
-**action** Go ahead, start the server by running this command `npm start`.
+**Action** Go ahead, start the server by running this command `npm start`.
 
 ### build/index.html
 This is the default html page served by our little project.
@@ -44,7 +44,7 @@ Go to 127.0.0.1:3000 in a browser window to access this page.
 
 Right now it doesn't show anything.
 
-**action** Remove the comment tag around the `<h1>` element so the content gets displayed.
+**Action** Remove the comment tag around the `<h1>` element so the content gets displayed.
 
 Now if you refresh your browser window you should see the line "Step 1 completed!" appear!
 
