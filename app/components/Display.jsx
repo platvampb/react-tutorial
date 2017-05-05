@@ -5,6 +5,7 @@ export default class Display extends Component {
   render() {
     const {hasError} = this.props
 
+    //all display fields in order
     const displayFields = [
       'firstNumber',
       'operation',

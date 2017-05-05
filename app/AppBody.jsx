@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import Display from './components/Display'
 import Panel from './components/Panel'
 
+//const is similar to let, except that whatever declared cannot be modified later
 const operations = {
   "+": (a, b) => a + b,
   "-": (a, b) => a - b,

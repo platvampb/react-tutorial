@@ -12,6 +12,7 @@ export default class Box extends Component {
       display = '='
     }
 
+    //highight unfilled fields except for the result
     if (hasError && value === null && fieldName != 'result') {
       styleClass += ' error'
     }
