@@ -30,12 +30,12 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				include: /stylesheets/,
+				include: /app/,
 				loader: 'style!css?outputStyle=expanded'
 			},
 			{
 				test: /\.scss$/,
-				include: /stylesheets/,
+				include: /app/,
 				loader: 'style!css!sass?outputStyle=expanded'
 			},
 			{
