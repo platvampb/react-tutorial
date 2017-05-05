@@ -27,7 +27,7 @@ At Wherego, we usually put ONE component in ONE .jsx file. So, to use a componen
 Now if you visit 127.0.0.1:3000, you should see the phrase "Step 3" in your browser window.
 
 ### A bit further with Component
-`app/AppBody.jsx` is the component in its minimum form. It is an object that 'extends', which is a form of inheritance, the Component class and implements the 'render' method. In the render method, it returns some HTML code written in JSX syntax.
+`app/AppBody.jsx` is the component in its minimum form. It is an object that 'extends', which is a form of inheritance, the Component class and implements the `render` method. In the `render` method, it returns some HTML code written in JSX syntax.
 
 The single most useful feature of the React Component system is that a component can render any number of other components.
 
