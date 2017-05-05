@@ -1,6 +1,6 @@
 # Welcome To The Wherego's React Tutorial
 
-# You are at Step 2 
+## You are at Step 2 
 
 In this step you will introduce React into this project.
 
@@ -37,3 +37,5 @@ Wait what? You don't?
 Well, to tell the truth, there is a subtle bug hidden in the code.
 
 Proceed to the next step after you manage to find it and get the text to appear in your browser.
+
+P.S. At this point you may have come across it: in the console window where you launched the Webpack Dev Server, you will occasionally come across red colored error messages after you made changes to some of the files. This is because the main purpose of Webpack, which runs in the background of Webpack Dev Server, is translating (not really compiling) all the javascript and style files into one or several bundled file. This "translating" process includes converting the ES6 style React code into browser compaticble ES5 code, converting `.scss` syntax stylesheets to `css` stylesheets. Since it is doing all this anyways, we also tasked it to check for basic syntax and style errors in our code. Webpack runs in real time by Webpack Dev Server. So everytime you are done with some changes, you really want to check the Webpack Dev Server console for errors frist. If there is error in there, your change will not be updated to the browser.
