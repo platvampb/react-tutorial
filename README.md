@@ -7,7 +7,7 @@ In this step you will introduce React into this project.
 ### Installation
 First, we want to install React for our development environment.
 
-**action** Do so by adding React and React Dom packages to our project by running the following command:
+**Action** Do so by adding React and React Dom packages to our project by running the following command:
 ```
 npm install --save react react-dom
 ```
@@ -22,13 +22,13 @@ The "--save" flag saves packages to the project's dependency list. After running
 ### Use React
 There is a new directory "app" in your project. Find "app.js" file in it.
 
-**action** Uncomment the two lines on top of the app.js file.
+**Action** Uncomment the two lines on top of the app.js file.
 
 "import" is the way to bring external code into a javascript file in ES6 syntax. We will see more of it later. In this case, we brought the code from React into an object called `React` and the `render` function from React Dom library.
 
 Notice that there is a bit of html code in the `render` call in app.js. The code simply tries to insert a new `div` element into an existing element with the id `apps`.
 
-**action** So now start up the Webpack Dev Server: `npm start`
+**Action** So now start up the Webpack Dev Server: `npm start`
 
 Now if you visit 127.0.0.1:3000, you should see the phrase "Step 2 completed!".
 
