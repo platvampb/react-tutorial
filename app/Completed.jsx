@@ -4,7 +4,7 @@ export default class Completed extends Component {
 	render() {
 		return (
 			<span className="completed">
-			completed!
+        completed!
 			</span>
 		)
 	}

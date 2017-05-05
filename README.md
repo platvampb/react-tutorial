@@ -22,7 +22,7 @@ You will also want to read up on [JSX](https://shripadk.github.io/react/docs/dis
 ### Introducing React Component
 At Wherego, we usually put ONE component in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
 
-**action** In `app/app.js`, uncomment the line `import AppBody from './AppBody'`
+**Action** In `app/app.js`, uncomment the line `import AppBody from './AppBody'`
 
 Now if you visit 127.0.0.1:3000, you should see the phrase "Step 3" in your browser window.
 
@@ -33,7 +33,7 @@ The single most useful feature of the React Component system is that a component
 
 You are going to try that feature out.
 
-**action** Remove the text `Step 3` from `app/AppBody.jsx`. Use `app/Step.jsx` and `app/Completed.jsx` inside the `app-body` element in `app/AppBody.jsx` to display the sentence "Step 3 completed!".
+**Action** Remove the text `Step 3` from `app/AppBody.jsx`. Use `app/Step.jsx` and `app/Completed.jsx` inside the `app-body` element in `app/AppBody.jsx` to display the sentence "Step 3 completed!".
 
 Hint: The syntax is very similar to how we used AppBody in `app.js`.
 
