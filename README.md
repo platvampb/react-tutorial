@@ -9,7 +9,7 @@ Redux is a library/framework that is not limited to React. It helps establish a 
 ### Installation
 We need to install `redux` and the interfacing library `react-redux`.
 
-**action** Run `npm install --save redux react-redux`, and then start the webpack dev server. You should see two lines "Step 0" and "Click to complete!" on the page.
+**Action** Run `npm install --save redux react-redux`, and then start the webpack dev server. You should see two lines "Step 0" and "Click to complete!" on the page.
 
 ### Redux basics
 We use Redux in our React project to manage our app-level data as a state tree. The idea is similar to the `state` object in React Component, so you can think of the Redux state tree as the `state` object for the entire app.
@@ -24,7 +24,7 @@ In the order below, several things need to happen to update a Redux state variab
 
 3. **Bind** - state data are useless if they are not reflected in UI elements. Take a look at `select` and `connect` calls in `AppBody` component. They introduce selected Redux state variables, as well as `dispatch` call, into the component and pass them into the `props`.
 
-**action** Click on the "Click to complete!" line. It should change the line above. Take some time to understand how this is done via the Redux dataflow.
+**Action** Click on the "Click to complete!" line. It should change the line above. Take some time to understand how this is done via the Redux dataflow.
 
 ### Practice
-Even though we successfully got the entire sentence to display, the step number is still not correct. Figure out the data flow of state tree variable `step` and modify it such that the number increment on every click. You should be able to accomplish by only adding a couple lines of code.
+**Action** Even though we successfully got the entire sentence to display, the step number is still not correct. Figure out the data flow of state tree variable `step` and modify it such that the number increment on every click. You should be able to accomplish by only adding a couple lines of code.
