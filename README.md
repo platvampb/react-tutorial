@@ -29,11 +29,11 @@ On a Web page, user interactions with the UI trigger different events. Implement
 
 Take a look at the `CompleteLink` component. It has declared a `onClick` event on the `div` element and have assigned the `completeStep` method to handle the event. Read the `completeSte` method definition, and the code in `Completed` component. Now take a guess what the method does.
 
-**action** Now uncomment the `<CompletLink/>` line in `AppBody`. You should be able to see a new line "Click to complete!" in your browser. What happens when you click on it?
+**Action** Now uncomment the `<CompletLink/>` line in `AppBody`. You should be able to see a new line "Click to complete!" in your browser. What happens when you click on it?
 
 Nothing?
 
-**action** Open the debug console of your browser and click on the line again. You should be able to see the line "I am clicked!" in the console output.
+**Action** Open the debug console of your browser and click on the line again. You should be able to see the line "I am clicked!" in the console output.
 
 You should also see an error message that says: "Cannot assign to read only property 'completed' of object '#<Object>'"
 
@@ -45,6 +45,6 @@ In order to change data that are "above" a component, the component where the da
 
 Find the `completeStep` method in `AppBody`. This method uses `setState` method to update the state variable. You should only use `setState` to change state variables.
 
-**action** pass the `completeStep` method as a prop to the `CompletLink` component. Attach it to the `onClick` event.
+**Action** pass the `completeStep` method as a prop to the `CompletLink` component. Attach it to the `onClick` event.
 
 When you are able to see the "Step 4 completed!" message, go to next step.
