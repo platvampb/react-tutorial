@@ -1,4 +1,4 @@
-# Welcome To The Wherego's React Tutorial
+# Welcome To platvampb's React Tutorial
 
 # You are at Step 4 
 
