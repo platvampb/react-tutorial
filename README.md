@@ -5,7 +5,7 @@
 In this step you will introduce React Component into this project.
 
 ### What is React Component?
-* React Components, as far as Wherego's applications go, contain ES6, JSX, and occasionally CSS in JSX syntax.
+* React Components, in many real-life applications, contain ES6, JSX, and occasionally CSS in JSX syntax.
 
 * A React Component is a modulized unit that renders a HTML elements.
 
@@ -20,7 +20,7 @@ To learn more about React Component, read [here](https://facebook.github.io/reac
 You will also want to read up on [JSX](https://shripadk.github.io/react/docs/displaying-data.html).
 
 ### Introducing React Component
-At Wherego, we usually put ONE component in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
+ONE component usually is put in ONE .jsx file. So, to use a component, we first need to introduce the code in a .jsx file into our current file.
 
 **Action** In `app/app.js`, uncomment the line `import AppBody from './AppBody'`
 
