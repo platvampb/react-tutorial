@@ -2,7 +2,7 @@
 
 # You are at Step 5 
 
-Introducint Redux!
+Introducing Redux!
 
 Redux is a library/framework that is not limited to React. It helps establish a specific way of organizing data flows. Read more about it [here](http://redux.js.org/docs/basics/DataFlow.html).
 
