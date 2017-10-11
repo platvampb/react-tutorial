@@ -18,7 +18,7 @@ And in `Step` component, the data is accessed by using `this.props.stepNumber`.
 Try changing the value of `stepNumber` in `AppBody`. The change should be reflected on the page.
 
 ### State
-In programming, 'state' refers to the information that a program stores to describe its, well, current state. For our purposes, we usually use 'state' to describe call the essential data that affect the display of UI elements.
+In programming, 'state' refers to the information that a program stores to describe its, well, current state. For our purposes, we usually use 'state' to describe all the essential data that affect the display of UI elements.
 
 A component can keep its own state by declaring a state object. 
 
