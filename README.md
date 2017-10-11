@@ -16,4 +16,4 @@ Currently, there are some issues preventing it from working though.
 
 Have fun hunting!
 
-P.S. Something that might help your debugging if you use Chrome: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en). Among other things, it lets you to inspect the stat tree in real time.
+P.S. Something that might help your debugging if you use Chrome: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en). Among other things, it lets you inspect the stat tree in real time.
